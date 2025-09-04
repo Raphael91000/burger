@@ -11,15 +11,8 @@ interface HeroSectionProps {
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOrderClick, onMenuClick }) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image avec overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
+      {/* Overlay seulement pour améliorer la lisibilité */}
+      <div className="absolute inset-0 bg-black/40"></div>
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

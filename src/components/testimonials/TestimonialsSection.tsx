@@ -52,7 +52,7 @@ export const TestimonialsSection: React.FC = () => {
   const averageRating = testimonials.reduce((sum, t) => sum + t.rating, 0) / testimonials.length;
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white/85 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -63,7 +63,7 @@ export const TestimonialsSection: React.FC = () => {
             <span className="text-2xl font-bold text-gray-900">{averageRating.toFixed(1)}/5</span>
             <span className="text-gray-600">({testimonials.length} avis)</span>
           </div>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-white drop-shadow-lg">
             Plus de 1000 clients satisfaits nous font confiance chaque mois
           </p>
         </div>

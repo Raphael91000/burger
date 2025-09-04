@@ -47,7 +47,7 @@ export const OffersSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-red-600 to-orange-500">
+    <section className="py-16 bg-gradient-to-br from-red-600/90 to-orange-500/90 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -61,7 +61,7 @@ export const OffersSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {offers.map((offer, index) => (
             <div key={offer.id} className="relative">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105">
                 {/* Image */}
                 <div className="relative h-48">
                   <img 

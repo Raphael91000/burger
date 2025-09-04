@@ -96,13 +96,13 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onAddToCart }) => {
   const filteredProducts = products.filter(product => product.category === activeCategory);
 
   return (
-    <section id="menu" className="py-16 bg-gray-50">
+    <section id="menu" className="py-16 bg-white/80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Notre Menu
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto drop-shadow-lg">
             Découvrez notre sélection de burgers artisanaux et accompagnements, 
             préparés avec passion et des ingrédients de qualité.
           </p>
@@ -117,7 +117,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onAddToCart }) => {
               className={`px-6 py-3 rounded-full font-medium transition-all duration-200 flex items-center gap-2 ${
                 activeCategory === category.id
                   ? 'bg-red-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-red-50 hover:text-red-600 shadow'
+                  : 'bg-white/90 text-gray-700 hover:bg-red-50 hover:text-red-600 shadow'
               }`}
             >
               <span className="text-lg">{category.icon}</span>

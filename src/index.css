@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reset et force le background sur tous les éléments racines */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+/* Force le background sur le body */
+body {
+  background-image: url('/bg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+}
+
+/* Force aussi sur le root div de React */
+#root {
+  background-image: url('/bg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+}
+
+/* Assure-toi que les containers n'ont pas de background qui cache le tien */
+.min-h-screen {
+  background: transparent !important;
+}
+
+/* Si tu veux que certaines sections soient semi-transparentes pour voir le background */
+section, div {
+  background-color: transparent;
+}
+
+/* Optionnel : ajoute un overlay semi-transparent pour la lisibilité */
+.content-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+}
