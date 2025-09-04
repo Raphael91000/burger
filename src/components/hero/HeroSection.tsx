@@ -16,6 +16,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOrderClick, onMenuCl
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Logo */}
+        <div className="mb-8">
+          <img 
+            src="/logo.png" 
+            alt="Logo Burger Palace" 
+            className="mx-auto h-32 w-auto drop-shadow-2xl"
+          />
+        </div>
+        
         {/* Badge de livraison gratuite */}
         <div className="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 animate-pulse">
           <Truck className="w-4 h-4" />
